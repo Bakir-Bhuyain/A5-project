@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:wght@100..900&display=swap");
+
+/* -------- Font Setup -------- */
+.raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.raleway-400 {
+  font-weight: 400;
+}
+.raleway-500 {
+  font-weight: 500;
+}
+.raleway-800 {
+  font-weight: 800;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400; /* default weight */
+}
+
+.inter-500 {
+  font-weight: 500;
+}
+.inter-700 {
+  font-weight: 700;
+}
+
+/* -------- Global Reset -------- */
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1171px;
+}
+
+/* -------- Navbar -------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+}
+
+/* Logo */
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  color: #030712;
+  font-size: 1.5rem;
+}
+
+/* Nav links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  font-family: "Raleway", sans-serif;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgba(3, 7, 18, 0.7);
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Buy Tickets button */
+.btn {
+  display: flex;
+  background-color: #1dd1001a;
+  color: #1dd100;
+  padding: 16px 30px;
+  border-radius: 7px;
+  text-decoration: none;
+  gap: 9px;
+  font-weight: 700;
+}
+.button2 {
+  background-color: #1dd100;
+  color: black;
+  border: 2px solid #1dd100;
+  font-weight: 700;
+}
+
+.hero {
+  background: url("./images/banner.png") no-repeat center center;
+  background-size: cover;
+}
