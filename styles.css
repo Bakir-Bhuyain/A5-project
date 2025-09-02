@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:wght@100..900&display=swap");
+@import "tailwindcss"
 
+@tailwind utilities;
+.section-mg{
+  margin-top: 100px;
+}
 /* -------- Font Setup -------- */
 .raleway {
   font-family: "Raleway", sans-serif;
@@ -9,9 +14,13 @@
 
 .raleway-400 {
   font-weight: 400;
+  
 }
 .raleway-500 {
   font-weight: 500;
+}
+.raleway-700 {
+  font-weight: 700;
 }
 .raleway-800 {
   font-weight: 800;
@@ -26,14 +35,17 @@
 .inter-500 {
   font-weight: 500;
 }
+.inter-600 {
+  font-weight: 600;
+}
 .inter-700 {
   font-weight: 700;
 }
 
 /* -------- Global Reset -------- */
-* {
+body {
   margin: 0 auto;
-  padding: 0;
+  /* padding: 0; */
   box-sizing: border-box;
   max-width: 1171px;
 }
@@ -96,4 +108,11 @@ nav {
 .hero {
   background: url("./images/banner.png") no-repeat center center;
   background-size: cover;
+}
+.offers-btn {
+  margin-top: 40px;
+}
+.departure{
+  width: 80%;
+  padding: 15px;
 }
