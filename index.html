@@ -23,25 +23,28 @@
         <li><a href="#">Destination</a></li>
         <li><a href="#">Search Bus</a></li>
       </ul>
-      <a href="" class="btn w-auto h-auto font-bold text-[20px]"
+      <a href="" class="btn md:w-auto md:h-auto font-bold text-[20px]"
         >Bus<img src="./images/bus-icon.png" alt="ticket icon"
       /></a>
     </nav>
     <!-- hero  -->
     <section class="relative">
-      <div class="hero h-[550px] pb-32">
+      <div class="hero md:h-[550px] md:pb-32">
         <!-- <div class="hero-overlay"></div> -->
         <div class="hero-content text-neutral-content text-center">
           <div class="">
-            <h1 class="home raleway-800 text-[64px] w-auto">
+            <h1 class="home raleway-800 md:text-[64px] w-auto">
               End-to-End Travel with <br />
               <span class="text-[#1DD100]">P Paribahan</span>
             </h1>
-            <p class="inter-500 text-xl w-[65%] m-auto">
+            <p class="inter-500 text-xl md:w-[65%] md:m-auto">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined.
             </p>
-            <button class="button2 btn h-auto text-[20px] m-auto">
+            <button
+              id="scrollToSectionButton"
+              class="button2 btn md:h-auto md:text-[20px] m-auto"
+            >
               Buy Tickets
             </button>
           </div>
@@ -50,12 +53,16 @@
 
       <!-- Multiple card section  -->
       <div
-        class="items-center justify-between absolute left-1/2 -translate-x-1/2 -bottom-16 flex gap-6"
+        class="grid grid-cols-1 md:flex items-center justify-between md:absolute left-1/2 md:-translate-x-1/2 -bottom-16 gap-6"
       >
         <div
-          class="h-[138px] gap-10 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
+          class="md:h-[138px] gap-10 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
         >
-          <img class="w-[64px] h-[64px]" src="./images/people.png" alt="" />
+          <img
+            class="w-[40px] h-[40px] md:w-[64px] md:h-[64px]"
+            src="./images/people.png"
+            alt=""
+          />
           <div>
             <h2 class="text-3xl font-bold">500K+</h2>
             <p class="inter-500">Registered users</p>
@@ -65,7 +72,7 @@
           class="w-[308px] h-[138px] gap-2 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
         >
           <img
-            class="w-[64px] h-[64px]"
+            class="w-[40px] h-[40px] md:w-[64px] md:h-[64px]"
             src="./images/ticket-cupon.png"
             alt=""
           />
@@ -77,7 +84,11 @@
         <div
           class="w-[308px] h-[138px] gap-2 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
         >
-          <img class="w-[64px] h-[64px]" src="./images/stoppage.png" alt="" />
+          <img
+            class="w-[40px] h-[40px] md:w-[64px] md:h-[64px]"
+            src="./images/stoppage.png"
+            alt=""
+          />
           <div>
             <h2 class="text-3xl font-bold">80K+</h2>
             <p class="inter-500">Rental partners</p>
@@ -89,14 +100,14 @@
     <!-- offers and coupon code section -->
     <section style="margin-top: 100px">
       <div>
-        <h1 class="text-center raleway-700 text-4xl">Best offers for you</h1>
+        <h1 class="text-center raleway-700 md:text-4xl">Best offers for you</h1>
       </div>
-      <div class="flex gap-20 mt-10">
+      <div class="grid grid-cols-1 md:flex gap-20 mt-10">
         <div
-          class="cupon lg:w-[573px] h-[220px] bg-[#FFBF0F] rounded-2xl flex items-center"
+          class="cupon md:w-[573px] md:h-[220px] bg-[#FFBF0F] rounded-2xl flex items-center"
         >
           <div class="left px-8">
-            <span class="inter-700 text-4xl"><h1>15% OFF</h1></span>
+            <span class="inter-700 md:text-4xl"><h1>15% OFF</h1></span>
             <p class="inter-600 text-2xl">on your next purchase</p>
             <p class="inter-500 text-[#030712] opacity-50 text-xl">
               Use by January 2024
@@ -148,31 +159,38 @@
 
         <!-- Card Start -->
         <div
-          class="bg-white rounded-3xl flex justify-between items-center shadow-md w-[1170px] h-[418px]"
+          class="bg-white rounded-3xl grid grid-cols-1 md:flex justify-between items-center shadow-md md:w-[1170px] md:h-[418px]"
         >
           <!-- Left Side -->
-          <div class="p-6 w-[75%]">
+          <div class="p-6 md:w-[75%]">
             <!-- Top (Bus + Title + Seats Left) -->
             <div class="flex justify-between items-center mb-6">
               <div class="flex gap-4 items-center">
-                <img src="./images/bus-logo.png" alt="" />
+                <img
+                  class="w-[40px] h-[40px]"
+                  src="./images/bus-logo.png"
+                  alt=""
+                />
                 <div>
-                  <h2 class="text-4xl raleway-800">Greenline Paribahan</h2>
+                  <h2 class="md:text-4xl raleway-800">Greenline Paribahan</h2>
                   <p class="text-gray-500">Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
               <div>
                 <button
-                  class="bg-green-100 text-green-600 px-6 py-4 rounded-lg font-semibold flex items-center gap-2 hover:bg-green-200 transition"
+                  class="bg-green-100 text-green-600 md:px-6 md:py-4 rounded-lg font-semibold md:flex items-center gap-2 hover:bg-green-200 transition"
                 >
                   <img src="./images/seat-green.png" alt="" class="w-5 h-5" />
-                  <span id="seat-count" class="inter-600">40 Seats left</span>
+                  <div class="flex inter-600 cursor-pointer">
+                    <span id="seat-count">40</span>
+                    <p>Seat Left</p>
+                  </div>
                 </button>
               </div>
             </div>
 
             <!-- Route + Departure -->
-            <div class="bg-[#F7F8F8] rounded-2xl p-12 w-[808px]">
+            <div class="bg-[#F7F8F8] rounded-2xl md:p-12 md:w-[808px]">
               <div class="flex justify-between mb-2">
                 <p class="text-gray-500">Route</p>
                 <p class="font-medium">Dhaka - Sylhet</p>
@@ -210,7 +228,10 @@
         </div>
       </div>
     </section>
-    <main class="bg-white rounded-2xl shadow-md p-6 w-full">
+    <main
+      id="seat-selection-section"
+      class="bg-white rounded-2xl shadow-md p-6 w-full"
+    >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- LEFT SIDE (Seats with Row Labels) -->
         <div>
@@ -241,27 +262,27 @@
           <div class="border-b border-dashed border-gray-400 my-2"></div>
 
           <!-- Seat Layout -->
-          <div class="space-y-4 mt-4">
+          <div id="seats-containers" class="space-y-4 mt-4">
             <!-- Row A -->
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">A</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A4
               </button>
@@ -271,22 +292,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">B</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B4
               </button>
@@ -296,22 +317,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">C</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C4
               </button>
@@ -321,22 +342,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">D</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-green-500 text-white opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D4
               </button>
@@ -346,22 +367,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">E</span>
               <button
-                class="w-[110px] h-[58px] bg-green-500 text-white opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E4
               </button>
@@ -371,22 +392,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">F</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F4
               </button>
@@ -396,22 +417,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">G</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-green-500 text-white opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G4
               </button>
@@ -420,22 +441,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">H</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H4
               </button>
@@ -444,22 +465,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">I</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I4
               </button>
@@ -468,22 +489,22 @@
             <div class="flex items-center gap-4">
               <span class="w-6 text-lg font-medium">J</span>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J1
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J2
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J3
               </button>
               <button
-                class="w-[110px] h-[58px] bg-gray-200 opacity-50 rounded inter-500"
+                class="seat-btn w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J4
               </button>
@@ -498,24 +519,21 @@
 
           <!-- Booking Summary -->
           <div class="border rounded-lg p-4 space-y-3">
-            <div class="flex justify-between inter-500 border-b pb-2 text-xl">
+            <div
+              class="booking-seats flex justify-between inter-500 border-b pb-2 text-xl"
+            >
               <span>Seat</span>
               <span>Class</span>
               <span>Price</span>
             </div>
-            <div class="flex justify-between text-sm">
-              <span>C2</span>
-              <span>Economy</span>
-              <span>550</span>
-            </div>
-            <div class="flex justify-between text-sm">
-              <span>C2</span>
-              <span>Economy</span>
-              <span>550</span>
-            </div>
-            <div class="flex justify-between font-medium border-t pt-2">
+            <div
+              class="sitsThatWillPurchase flex justify-between text-sm"
+            ></div>
+            <div
+              class="booking-seats flex justify-between inter-500 border-b pb-2 text-xl"
+            >
               <span>Total Price</span>
-              <span>BDT 1100</span>
+              <h2>BDT<span class="fixed-price">00</span></h2>
             </div>
             <div class="flex mt-2">
               <input
@@ -523,7 +541,9 @@
                 placeholder="Have any coupon?"
                 class="flex-1 border rounded-l-lg px-3 py-2 text-sm focus:outline-none"
               />
-              <button class="bg-green-500 text-white px-4 rounded-r-lg mx-auto">
+              <button
+                class="bg-green-500 text-white px-4 rounded-r-lg mx-auto cursor-pointer"
+              >
                 Apply
               </button>
             </div>
@@ -546,7 +566,7 @@
             <div>
               <label class="block text-sm font-medium">Phone Number*</label>
               <input
-                type="text"
+                type="number"
                 placeholder="Enter your phone number"
                 class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none"
               />
@@ -562,7 +582,7 @@
           </form>
           <div class="mt-6">
             <button
-              class="w-full bg-green-500 text-white py-3 rounded-lg text-lg font-medium"
+              class="w-full bg-green-500 text-white py-3 rounded-lg text-lg font-medium cursor-pointer"
             >
               Next
             </button>
@@ -574,9 +594,9 @@
         </div>
       </div>
     </main>
-    <footer class="bg-black shadow-md w-full">
+    <footer class="bg-black shadow-md md:w-full">
       <div class="">
-        <div class="flex justify-between items-center">
+        <div class="grid grid-cols-1 md:flex justify-between items-center">
           <div class="text-white">
             <h1>P-Ticket</h1>
             <p>
@@ -586,8 +606,8 @@
           </div>
           <div class="text-white">
             <h2>Download our app</h2>
-            <div class="flex border">
-              <img src="./images/playstore.png" alt="" />
+            <div class="md:flex border">
+              <img class="" src="./images/playstore.png" alt="" />
               <p>GET IT ON <br />Google Play</p>
             </div>
           </div>
@@ -598,12 +618,16 @@
         <div class="text-white flex">
           <p>@all rights reserved, P-Ticket services limited.2024</p>
           <div class="text-white flex">
-            <a href="Terms & condition"></a>
-            <a href="Return & refund policy"></a>
-            <a href="Privacy policy"></a>
+            <ul>
+              <li><a href="Terms & condition"></a></li>
+              <li><a href="Return & refund policy"></a></li>
+              <li><a href="Privacy policy"></a></li>
+            </ul>
           </div>
         </div>
       </div>
     </footer>
+    <script src="./utility.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
