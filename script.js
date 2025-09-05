@@ -15,34 +15,40 @@ let totalSeatCount = convertedValue("seat-count");
 let seatCount = document.getElementById("seat-count");
 let maxSelectedSeat = 0;
 
-function toggleSeatButton(button) {
-  button.classList.toggle("bg-gray-300");
-  button.classList.toggle("bg-green-500");
-  button.classList.toggle("text-white");
+function selectSeat(button) {
+  // Select seat if not already selected
+  if (!button.classList.contains("bg-green-500")) {
+    if (maxSelectedSeat >= 4) {
+      alert("You can select maximum 4 seats only.");
+      return; // stop here, no selection
+    }
+
+    // ✅ Select logic
+    button.classList.remove("bg-gray-300");
+    button.classList.add("bg-green-500", "text-white");
+
+    totalSeatCount--;
+    maxSelectedSeat++;
+  } else {
+    // ✅ Deselect logic
+    button.classList.remove("bg-green-500", "text-white");
+    button.classList.add("bg-gray-300");
+
+    totalSeatCount++;
+    maxSelectedSeat--;
+  }
+
+  // Update counter
+  seatCount.innerText = totalSeatCount;
+  console.log("Selected Seats:", maxSelectedSeat);
 }
 
 for (const singleSeat of seat) {
   singleSeat.addEventListener("click", () => {
-   
-    toggleSeatButton(singleSeat);
-
-    if (singleSeat.classList.contains("bg-green-500")) {
-      totalSeatCount--;
-       if (maxSelectedSeat < 4) {
-         maxSelectedSeat++;
-
-       }else{
-        alert("savdhan");
-        return;
-       }
-    } else {
-      totalSeatCount++;
-      maxSelectedSeat--;
-    }
-    seatCount.innerText = totalSeatCount;
-    console.log(maxSelectedSeat);
+    selectSeat(singleSeat);
   });
 }
+
 
 
 
