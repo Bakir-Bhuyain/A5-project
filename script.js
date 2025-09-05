@@ -10,21 +10,46 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+const seat = document.querySelectorAll(".allSeats");
+let totalSeatCount = convertedValue("seat-count");
+let seatCount = document.getElementById("seat-count");
+let maxSelectedSeat = 0;
+
+function toggleSeatButton(button) {
+  button.classList.toggle("bg-gray-300");
+  button.classList.toggle("bg-green-500");
+  button.classList.toggle("text-white");
+}
+
+for (const singleSeat of seat) {
+  singleSeat.addEventListener("click", () => {
+   
+    toggleSeatButton(singleSeat);
+
+    if (singleSeat.classList.contains("bg-green-500")) {
+      totalSeatCount--;
+       if (maxSelectedSeat < 4) {
+         maxSelectedSeat++;
+
+       }else{
+        alert("savdhan");
+        return;
+       }
+    } else {
+      totalSeatCount++;
+      maxSelectedSeat--;
+    }
+    seatCount.innerText = totalSeatCount;
+    console.log(maxSelectedSeat);
+  });
+}
 
 
 
-const seatsContainer = document.getElementById("seats-containers");
 
-seatsContainer.addEventListener("click", function (event) {
-  // Check if the clicked element is a <button> and has the 'seat-btn' class
-  if (
-    event.target.tagName === "BUTTON" &&
-    event.target.classList.contains("seat-btn")
-  ) {
-    event.target.style.backgroundColor = "#1DD100";
-    event.target.style.color = "";
-  }
-});
+
+
+
 
 
 
