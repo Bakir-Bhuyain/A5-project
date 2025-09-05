@@ -10,22 +10,24 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@400;500;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="inter bg-white text-gray-900">
     <!-- Navbar -->
-    <nav>
-      <div class="logo">P-Ticket</div>
-      <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Destination</a></li>
-        <li><a href="#">Search Bus</a></li>
-      </ul>
-      <a href="" class="btn md:w-auto md:h-auto font-bold text-[20px]"
-        >Bus<img src="./images/bus-icon.png" alt="ticket icon"
-      /></a>
+    <nav aria-label="Primary" class="w-full border-b">
+      <div class="max-w-7xl mx-auto flex items-center justify-between p-4 gap-4 flex-wrap">
+        <div class="logo raleway-800 text-2xl md:text-3xl">P-Ticket</div>
+        <ul class="nav-links inter flex items-center gap-4 md:gap-8 text-sm md:text-base flex-wrap">
+          <li><a class="hover:text-[#1DD100] transition" href="#">Home</a></li>
+          <li><a class="hover:text-[#1DD100] transition" href="#">About</a></li>
+          <li><a class="hover:text-[#1DD100] transition" href="#">Destination</a></li>
+          <li><a class="hover:text-[#1DD100] transition" href="#">Search Bus</a></li>
+        </ul>
+        <a href="" class="btn md:w-auto md:h-auto inter-700 text-[16px] md:text-[20px] flex items-center gap-2">
+          Bus<img class="w-5 h-5" src="./images/bus-icon.png" alt="ticket icon"/>
+        </a>
+      </div>
     </nav>
     <!-- hero  -->
     <section class="relative">
@@ -33,17 +35,17 @@
         <!-- <div class="hero-overlay"></div> -->
         <div class="hero-content text-neutral-content text-center">
           <div class="">
-            <h1 class="home raleway-800 md:text-[64px] w-auto">
+            <h1 class="home raleway-800 md:text-[64px] text-3xl leading-tight w-auto">
               End-to-End Travel with <br />
               <span class="text-[#1DD100]">P Paribahan</span>
             </h1>
-            <p class="inter-500 text-xl md:w-[65%] md:m-auto">
+            <p class="inter-500 text-base md:text-xl md:w-[65%] md:m-auto mt-3">
               Yes, you can run unit tests and view the results directly within
               the app. The integrated testing features allow for a streamlined.
             </p>
             <button
               id="scrollToSectionButton"
-              class="button2 btn md:h-auto md:text-[20px] m-auto"
+              class="button2 btn md:h-auto md:text-[20px] m-auto mt-5"
             >
               Buy Tickets
             </button>
@@ -53,44 +55,44 @@
 
       <!-- Multiple card section  -->
       <div
-        class="grid grid-cols-1 md:flex items-center justify-between md:absolute left-1/2 md:-translate-x-1/2 -bottom-16 gap-6"
+        class="grid grid-cols-1 md:flex items-center justify-between md:absolute left-1/2 md:-translate-x-1/2 -bottom-16 gap-6 p-4"
       >
         <div
-          class="md:h-[138px] gap-10 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
+          class="md:h-[138px] gap-10 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-6 md:p-10 bg-white shadow-lg w-full md:w-auto"
         >
           <img
             class="w-[40px] h-[40px] md:w-[64px] md:h-[64px]"
             src="./images/people.png"
-            alt=""
+            alt="Registered users icon"
           />
           <div>
-            <h2 class="text-3xl font-bold">500K+</h2>
+            <h2 class="text-2xl md:text-3xl raleway-800">500K+</h2>
             <p class="inter-500">Registered users</p>
           </div>
         </div>
         <div
-          class="w-[308px] h-[138px] gap-2 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
+          class="w-full md:w-[308px] h-auto md:h-[138px] gap-2 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-6 md:p-10 bg-white shadow-lg"
         >
           <img
             class="w-[40px] h-[40px] md:w-[64px] md:h-[64px]"
             src="./images/ticket-cupon.png"
-            alt=""
+            alt="Tickets sold icon"
           />
           <div>
-            <h2 class="text-3xl font-bold">1.7 lacks</h2>
+            <h2 class="text-2xl md:text-3xl raleway-800">1.7 lacks</h2>
             <p class="inter-500">Tickets sold</p>
           </div>
         </div>
         <div
-          class="w-[308px] h-[138px] gap-2 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-10 bg-white shadow-lg"
+          class="w-full md:w-[308px] h-auto md:h-[138px] gap-2 border-b-2 border-[#1DD100] rounded-2xl flex items-center p-6 md:p-10 bg-white shadow-lg"
         >
           <img
             class="w-[40px] h-[40px] md:w-[64px] md:h-[64px]"
             src="./images/stoppage.png"
-            alt=""
+            alt="Rental partners icon"
           />
           <div>
-            <h2 class="text-3xl font-bold">80K+</h2>
+            <h2 class="text-2xl md:text-3xl raleway-800">80K+</h2>
             <p class="inter-500">Rental partners</p>
           </div>
         </div>
@@ -100,23 +102,23 @@
     <!-- offers and coupon code section -->
     <section style="margin-top: 100px">
       <div>
-        <h1 class="text-center raleway-700 md:text-4xl">Best offers for you</h1>
+        <h1 class="text-center raleway-700 md:text-4xl text-2xl">Best offers for you</h1>
       </div>
-      <div class="grid grid-cols-1 md:flex gap-20 mt-10">
+      <div class="grid grid-cols-1 md:flex gap-6 md:gap-20 mt-10">
         <div
           class="cupon md:w-[573px] md:h-[220px] bg-[#FFBF0F] rounded-2xl flex items-center"
         >
           <div class="left px-8">
-            <span class="inter-700 md:text-4xl"><h1>15% OFF</h1></span>
-            <p class="inter-600 text-2xl">on your next purchase</p>
-            <p class="inter-500 text-[#030712] opacity-50 text-xl">
+            <span class="inter-700 md:text-4xl text-2xl"><h1>15% OFF</h1></span>
+            <p class="inter-600 text-xl md:text-2xl">on your next purchase</p>
+            <p class="inter-500 text-[#030712] opacity-50 text-base md:text-xl">
               Use by January 2024
             </p>
           </div>
           <div class="border-dashed"></div>
           <div class="cupon1">
-            <span class="raleway-700 text-4xl"><h1>NEW15</h1></span>
-            <p class="cuponn text-2xl text-[#030712] opacity-50">Coupon Code</p>
+            <span class="raleway-700 text-3xl md:text-4xl"><h1>NEW15</h1></span>
+            <p class="cuponn text-lg md:text-2xl text-[#030712] opacity-50">Coupon Code</p>
           </div>
         </div>
         <!-- coupon card-2 -->
@@ -124,16 +126,16 @@
           class="cupon md:w-[573px] md:h-[220px] bg-[#F78C9C] rounded-2xl flex items-center"
         >
           <div class="left px-8">
-            <span class="inter-700 text-4xl"><h1>20% OFF</h1></span>
-            <p class="inter-600 text-2xl">on your next purchase</p>
-            <p class="inter-500 text-[#030712] opacity-50 text-xl">
+            <span class="inter-700 text-3xl md:text-4xl"><h1>20% OFF</h1></span>
+            <p class="inter-600 text-xl md:text-2xl">on your next purchase</p>
+            <p class="inter-500 text-[#030712] opacity-50 text-base md:text-xl">
               Use by January 2024
             </p>
           </div>
           <div class="border-dashed"></div>
           <div class="cupon1">
-            <span class="raleway-700 text-4xl"><h1>Couple 20</h1></span>
-            <p class="cuponn text-2xl text-[#030712] opacity-50">Coupon Code</p>
+            <span class="raleway-700 text-3xl md:text-4xl"><h1>Couple 20</h1></span>
+            <p class="cuponn text-lg md:text-2xl text-[#030712] opacity-50">Coupon Code</p>
           </div>
         </div>
       </div>
@@ -148,10 +150,10 @@
     <section class="section-mg">
       <div class="bg-gray-100 py-20 rounded-3xl">
         <div class="text-center mb-10">
-          <h1 class="raleway-700 text-4xl mb-6">
+          <h1 class="raleway-700 text-3xl md:text-4xl mb-6">
             <span>P.H Paribahan</span>
           </h1>
-          <p class="text-[#030712] opacity-50 inter-500 text-xl">
+          <p class="text-[#030712] opacity-50 inter-500 text-base md:text-xl">
             Yes, you can run unit tests and view the results directly within the
             app. The integrated <br />testing features allow for a streamlined .
           </p>
@@ -159,29 +161,29 @@
 
         <!-- Card Start -->
         <div
-          class="bg-white rounded-3xl grid grid-cols-1 md:flex justify-between items-center shadow-md md:w-[1170px] md:h-[418px]"
+          class="bg-white rounded-3xl grid grid-cols-1 md:flex justify-between items-center shadow-md md:w-[1170px] md:h-[418px] mx-auto"
         >
           <!-- Left Side -->
-          <div class="p-6 md:w-[75%]">
+          <div class="p-6 md:w-[75%] w-full">
             <!-- Top (Bus + Title + Seats Left) -->
             <div class="flex justify-between items-center mb-6">
               <div class="flex gap-4 items-center">
                 <img
                   class="w-[40px] h-[40px]"
                   src="./images/bus-logo.png"
-                  alt=""
+                  alt="bus logo"
                 />
                 <div>
-                  <h2 class="md:text-4xl raleway-800">Greenline Paribahan</h2>
-                  <p class="text-gray-500">Coach-009-WEB ! AC_Business</p>
+                  <h2 class="md:text-4xl text-2xl raleway-800">Greenline Paribahan</h2>
+                  <p class="text-gray-500 inter">Coach-009-WEB ! AC_Business</p>
                 </div>
               </div>
               <div>
                 <button
-                  class=" bg-green-100 text-green-600 md:px-6 md:py-4 rounded-lg font-semibold md:flex items-center gap-2 hover:bg-green-200 transition"
+                  class=" bg-green-100 text-green-600 md:px-6 md:py-4 px-4 py-2 rounded-lg font-semibold md:flex items-center gap-2 hover:bg-green-200 transition"
                 >
                   <img src="./images/seat-green.png" alt="" class="w-5 h-5" />
-                  <div class="flex inter-600 cursor-pointer">
+                  <div class="flex inter-600 cursor-pointer items-center gap-1">
                     <span id="seat-count">40</span>
                     <p>Seat Left</p>
                   </div>
@@ -190,47 +192,41 @@
             </div>
 
             <!-- Route + Departure -->
-            <div class="bg-[#F7F8F8] rounded-2xl md:p-12 md:w-[808px]">
+            <div class="bg-[#F7F8F8] rounded-2xl md:p-12 p-6 md:w-[808px]">
               <div class="flex justify-between mb-2">
-                <p class="text-gray-500">Route</p>
-                <p class="font-medium">Dhaka - Sylhet</p>
+                <p class="text-gray-500 inter">Route</p>
+                <p class="font-medium inter">Dhaka - Sylhet</p>
               </div>
               <div class="border-b border-dashed border-gray-400 my-2"></div>
               <div class="flex justify-between mb-2">
-                <p class="text-gray-500">Departure Time</p>
-                <p class="font-medium">9:00 PM</p>
+                <p class="text-gray-500 inter">Departure Time</p>
+                <p class="font-medium inter">9:00 PM</p>
               </div>
               <div class="border-b border-dashed border-gray-400 my-2"></div>
 
               <!-- Bottom Info -->
-              <div class="flex justify-between gap-4 text-center mt-4">
-                <div class="bg-white border rounded-2xl px-4 py-3 w-1/3">
-                  Boarding Point - Laxmipur
-                </div>
-                <div class="bg-white border rounded-2xl px-4 py-3 w-1/3">
-                  Dropping Point - Bogura
-                </div>
-                <div class="bg-white border rounded-2xl px-4 py-3 w-1/3">
-                  Est. Time - 11 Hour
-                </div>
+              <div class="flex justify-between gap-4 text-center mt-4 flex-col md:flex-row">
+                <div class="bg-white border rounded-2xl px-4 py-3 md:w-1/3">Boarding Point - Laxmipur</div>
+                <div class="bg-white border rounded-2xl px-4 py-3 md:w-1/3">Dropping Point - Bogura</div>
+                <div class="bg-white border rounded-2xl px-4 py-3 md:w-1/3">Est. Time - 11 Hour</div>
               </div>
             </div>
           </div>
 
           <!-- Right Side Fare -->
           <div
-            class="border-l-2 border-dashed border-green-500 flex flex-col justify-center items-center px-8"
+            class="border-l-2 border-dashed border-green-500 flex flex-col justify-center items-center px-8 h-full"
           >
-            <img src="./images/fare.png" alt="" class="w-8 h-8 mb-2" />
-            <h1 class="text-2xl font-bold">550 Taka</h1>
-            <p class="text-gray-500 text-sm">Per Seat</p>
+            <img src="./images/fare.png" alt="fare icon" class="w-8 h-8 mb-2" />
+            <h1 class="text-2xl raleway-800">550 Taka</h1>
+            <p class="text-gray-500 text-sm inter">Per Seat</p>
           </div>
         </div>
       </div>
     </section>
     <main
       id="seat-selection-section"
-      class="bg-white rounded-2xl shadow-md p-6 w-full"
+      class="bg-white rounded-2xl shadow-md p-6 w-full max-w-7xl mx-auto"
     >
       <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
         <!-- LEFT SIDE (Seats with Row Labels) -->
@@ -243,7 +239,7 @@
               <img
                 class="w-[21px] h-[21px]"
                 src="./images/seat-gray.png"
-                alt=""
+                alt="available seat"
               />
               <p class="inter-500 text-gray-500 opacity-50 text-lg">
                 Available
@@ -253,7 +249,7 @@
               <img
                 class="w-[21px] h-[21px]"
                 src="./images/seat-green-filled.png"
-                alt=""
+                alt="selected seat"
               />
               <p class="inter-500 text-green-500 text-lg">Selected</p>
             </div>
@@ -265,24 +261,24 @@
           <div id="seats-containers" class="space-y-4 mt-4">
             <!-- Row A -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">A</span>
+              <span class="w-6 text-lg raleway-700">A</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 A4
               </button>
@@ -290,24 +286,24 @@
 
             <!-- Row B -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">B</span>
+              <span class="w-6 text-lg raleway-700">B</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 B4
               </button>
@@ -315,24 +311,24 @@
 
             <!-- Row C -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">C</span>
+              <span class="w-6 text-lg raleway-700">C</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 C4
               </button>
@@ -340,24 +336,24 @@
 
             <!-- Row D -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">D</span>
+              <span class="w-6 text-lg raleway-700">D</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 D4
               </button>
@@ -365,24 +361,24 @@
 
             <!-- Row E -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">E</span>
+              <span class="w-6 text-lg raleway-700">E</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 E4
               </button>
@@ -390,24 +386,24 @@
 
             <!-- Row F -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">F</span>
+              <span class="w-6 text-lg raleway-700">F</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 F4
               </button>
@@ -415,96 +411,96 @@
 
             <!-- Row G -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">G</span>
+              <span class="w-6 text-lg raleway-700">G</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 G4
               </button>
             </div>
             <!-- Row H -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">H</span>
+              <span class="w-6 text-lg raleway-700">H</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 H4
               </button>
             </div>
             <!-- Row I -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">I</span>
+              <span class="w-6 text-lg raleway-700">I</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 I4
               </button>
             </div>
             <!-- Row J -->
             <div class="flex items-center gap-4">
-              <span class="w-6 text-lg font-medium">J</span>
+              <span class="w-6 text-lg raleway-700">J</span>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J1
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J2
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J3
               </button>
               <button
-                class="allSeats w-[110px] h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
+                class="allSeats w-16 md:w-[110px] h-12 md:h-[58px] bg-gray-200 rounded inter-500 cursor-pointer"
               >
                 J4
               </button>
@@ -557,33 +553,33 @@
           <!-- Passenger Form -->
           <form class="mt-4 space-y-3">
             <div>
-              <label class="block text-sm font-medium">Passenger Name*</label>
+              <label class="block text-sm font-medium inter">Passenger Name*</label>
               <input
                 type="text"
                 placeholder="Enter your name"
-                class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none"
+                class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none inter"
               />
             </div>
             <div>
-              <label class="block text-sm font-medium">Phone Number*</label>
+              <label class="block text-sm font-medium inter">Phone Number*</label>
               <input
                 type="number"
                 placeholder="Enter your phone number"
-                class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none"
+                class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none inter"
               />
             </div>
             <div>
-              <label class="block text-sm font-medium">Email ID</label>
+              <label class="block text-sm font-medium inter">Email ID</label>
               <input
                 type="email"
                 placeholder="Enter your email id"
-                class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none"
+                class="w-full border rounded-lg px-3 py-2 mt-1 text-sm focus:outline-none inter"
               />
             </div>
           </form>
           <div class="mt-6">
             <button
-              class="w-full bg-green-500 text-white py-3 rounded-lg text-lg font-medium cursor-pointer"
+              class="w-full bg-green-500 text-white py-3 rounded-lg text-lg font-medium cursor-pointer inter"
             >
               Next
             </button>
@@ -595,39 +591,46 @@
         </div>
       </div>
     </main>
-    <footer class="bg-black shadow-md md:w-full">
-      <div class="">
-        <div class="grid grid-cols-1 md:flex justify-between items-center">
-          <div class="text-white">
-            <h1>P-Ticket</h1>
-            <p>
-              P-Ticket is a digital platform to make your daily commuting
-              better.
-            </p>
-          </div>
-          <div class="text-white">
-            <h2>Download our app</h2>
-            <div class="md:flex border">
-              <img class="" src="./images/playstore.png" alt="" />
-              <p>GET IT ON <br />Google Play</p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="border-b border-dashed border-gray-400 my-2 w-[50%] items-center"
-        ></div>
-        <div class="text-white flex">
-          <p>@all rights reserved, P-Ticket services limited.2024</p>
-          <div class="text-white flex">
-            <ul>
-              <li><a href="Terms & condition"></a></li>
-              <li><a href="Return & refund policy"></a></li>
-              <li><a href="Privacy policy"></a></li>
-            </ul>
-          </div>
-        </div>
+   <footer class="bg-[#030712] text-gray-300 py-8 px-6 md:px-16">
+  <div class="max-w-7xl mx-auto">
+    <!-- TOP SECTION -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+      <!-- Left -->
+      <div>
+        <h1 class="text-white text-2xl raleway-800 mb-2">P-Ticket</h1>
+        <p class="text-gray-400 leading-relaxed inter">
+          P-Ticket is a digital platform to make your daily commuting better.
+        </p>
       </div>
-    </footer>
+
+      <!-- Right -->
+      <div class="flex flex-col md:items-end">
+        <h2 class="text-white mb-3 raleway-700">Download our app</h2>
+        <a href="#" class="flex items-center space-x-2 bg-black px-3 py-2 rounded-lg border border-gray-600 w-fit">
+          <img class="h-6" src="./images/playstore.png" alt="Google Play logo" />
+          <p class="text-white text-xs leading-tight inter">
+            GET IT ON <br />
+            <span class="text-lg font-semibold">Google Play</span>
+          </p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Divider -->
+    <div class="border-t border-dashed border-gray-600 my-6"></div>
+
+    <!-- BOTTOM SECTION -->
+    <div class="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400 inter">
+      <p>@all rights reserved, P-Ticket services limited.2024</p>
+      <ul class="flex space-x-6 mt-4 md:mt-0">
+        <li><a href="#" class="hover:text-white">Terms & condition</a></li>
+        <li><a href="#" class="hover:text-white">Return & refund policy</a></li>
+        <li><a href="#" class="hover:text-white">Privacy policy</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
     <script src="./utility.js"></script>
     <script src="./script.js"></script>
   </body>
